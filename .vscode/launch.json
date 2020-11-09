@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ScoreCheck",
+            "request": "launch",
+            "mainClass": "ScoreCheck",
+            "projectName": "Test_946c197"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)",
+            "request": "launch",
+            "mainClass": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Discount10<Test_946c197>",
+            "request": "launch",
+            "mainClass": "Discount10",
+            "projectName": "Test_946c197"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestGrader<Test_946c197>",
+            "request": "launch",
+            "mainClass": "TestGrader",
+            "projectName": "Test_946c197"
+        }
+    ]
+}
