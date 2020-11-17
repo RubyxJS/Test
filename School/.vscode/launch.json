@@ -1,0 +1,50 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Strings",
+            "request": "launch",
+            "mainClass": "Strings",
+            "projectName": "Assignment"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - External Terminal",
+            "request": "launch",
+            "console": "externalTerminal",
+            "mainClass": "HeightCalculator"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Discount",
+            "request": "launch",
+            "mainClass": "Discount",
+            "projectName": "src_c63448c6"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Numbers<src_c63448c6>",
+            "request": "launch",
+            "mainClass": "Numbers",
+            "projectName": "src_c63448c6"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestGrader<src_c63448c6>",
+            "request": "launch",
+            "mainClass": "TestGrader",
+            "projectName": "src_c63448c6"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+plugins {
+    id 'application'
+}
+
+apply plugin: "java"
+application {
+    mainClassName = "HeightCalculator"
+}
+
+group 'org.zappy'
+version '1.0-SNAPSHOT'
+
+test {
+    useTestNG()
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    runtime fileTree('src/dist/lib') { include '*.class'}
+    testImplementation group: 'org.testng', name: 'testng', version: '7.1.0'
+}
