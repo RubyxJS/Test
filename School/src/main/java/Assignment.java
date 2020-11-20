@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class HeightCalculator {
     public static void main(String[] args) {
 
@@ -10,7 +12,8 @@ class HeightCalculator {
             System.out.println("Enter 4 to quit program");
             System.out.println("Enter option:");
 
-            int option = Console.readInt();
+            Scanner consolei = new Scanner(System.in);
+            int option = consolei.nextInt();
             // if 4 is entered for "option" the program ends
             if (option >= 4) {
                 System.out.println("Program closed");
@@ -19,10 +22,10 @@ class HeightCalculator {
                 // if 1 is entered for option the user is asked for the sum of the heights and
                 // the amount of people, and is given the average
                 System.out.println("Enter Sum of heights:");
-                double sumHeight = Console.readInt();
+                double sumHeight = consolei.nextInt();
 
                 System.out.println("Enter amount of People:");
-                double amountPeople = Console.readInt();
+                double amountPeople = consolei.nextInt();
 
                 double heightAverage = (sumHeight / amountPeople);
                 System.out.print("The Average is = ");
@@ -35,14 +38,14 @@ class HeightCalculator {
                 // if 2 is entered for "option" the user is asked the amount of people and then
                 // has to put in all the height values, and the Height total
                 System.out.println("Enter amount of people:");
-                int sumPeople = Console.readInt();
+                int sumPeople = consolei.nextInt();
                 if (sumPeople <= 0) {
                     System.out.println("Invalid Number");
                 } else {
                     double totalHeight = 0;
                     for (int i = 1; i <= sumPeople; i++) {
                         System.out.println("Insert Height for person " + i + ": ");
-                        totalHeight += Console.readInt();
+                        totalHeight += consolei.nextInt();
                     }
                     System.out.print("The Height Total = ");
                     System.out.println(totalHeight);
@@ -55,10 +58,10 @@ class HeightCalculator {
                 // if 3 is entered for "option" the user is asked the average
                 // then the amount of people is given
                 System.out.println("Enter average height: ");
-                double heightAverage = Console.readInt();
+                double heightAverage = consolei.nextInt();
 
                 System.out.println("Enter height total: ");
-                double heightTotal = Console.readInt();
+                double heightTotal = consolei.nextInt();
 
                 double heightQuantity = heightTotal / heightAverage;
                 System.out.println("Height Quantity = " + heightQuantity);
